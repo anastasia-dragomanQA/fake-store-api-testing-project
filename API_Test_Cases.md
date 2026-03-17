@@ -43,11 +43,11 @@ Verify API response for non-existing product ID.
 API is available
 
 **Steps:**
-Send GET request to /products/9999
+1. Send GET request to /products/9999
 
 **Expected Result:**
-Status code is 404 OR empty response
-No product data is returned
+- Status code is 404 OR empty response
+- No product data is returned
 
 ## TC-API-004 Verify product categories can be retrieved
 
@@ -61,11 +61,11 @@ Verify API returns product categories.
 API is available
 
 **Steps:**
-Send GET request to /products/categories
+1. Send GET request to /products/categories
 
 **Expected Result:**
-Status code is 200 OK
-Response contains category list
+- Status code is 200 OK
+- Response contains category list
 
 ## TC-API-005 Verify products can be retrieved by category
 
@@ -79,11 +79,11 @@ Verify API returns products filtered by category.
 API is available
 
 **Steps:**
-Send GET request to /products/category/electronics
+1. Send GET request to /products/category/electronics
 
 **Expected Result:**
-Status code is 200 OK
-Response contains products for selected category
+- Status code is 200 OK
+- Response contains products for selected category
 
 ## TC-API-006 Verify login with valid credentials
 
@@ -124,11 +124,11 @@ API is available
 }
 
 **Steps:**
-Send POST request with invalid credentials
+1. Send POST request with invalid credentials
 
 **Expected Result:**
-Error response is returned
-Authentication fails
+- Error response is returned
+- Authentication fails
 
 ## TC-API-008 Verify login fails when username is missing
 
@@ -148,11 +148,11 @@ API is available
 }
 
 **Steps:**
-Send POST request without username
+1. Send POST request without username
 
 **Expected Result:**
-Error response is returned
-Validation message is displayed
+- Error response is returned
+- Validation message is displayed
 
 ## TC-API-009 Verify login fails when password is missing
 
@@ -172,11 +172,11 @@ API is available
 }
 
 **Steps:**
-Send POST request without password
+1. Send POST request without password
 
 **Expected Result:**
-Error response is returned
-Validation message is displayed
+- Error response is returned
+- Validation message is displayed
 
 ## TC-API-010 Verify API returns status code 200 for successful requests
 
@@ -190,9 +190,9 @@ Verify API returns status code 200 for successful requests.
 API is available
 
 **Steps:**
-Send GET request to /products
+1. Send GET request to /products
 
 **Expected Result:**
-Status code is 200 OK
+- Status code is 200 OK
 
 
