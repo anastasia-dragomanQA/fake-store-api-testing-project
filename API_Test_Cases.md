@@ -94,10 +94,12 @@ POST https://fakestoreapi.com/auth/login
 Verify login succeeds with valid credentials.
 
 **Request Body:**
+'''json
 {
   "username": "mor_2314",
   "password": "83r5^_"
 }
+'''
 
 **Steps:**
 1. Send POST request with valid credentials
