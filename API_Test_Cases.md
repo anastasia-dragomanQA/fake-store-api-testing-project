@@ -1,9 +1,9 @@
-# API Test Cases – Fake Store API
+# API Test Cases – DummyJSON API
 
 ## TC-API-001 Verify user can retrieve all products
 
 **Endpoint:**  
-GET https://fakestoreapi.com/products
+GET https://dummyjson.com/products
 
 **Description:**  
 Verify API returns all products.
@@ -19,7 +19,7 @@ Verify API returns all products.
 ## TC-API-002 Verify user can retrieve product by ID
 
 **Endpoint:**  
-GET https://fakestoreapi.com/products/1
+GET  https://dummyjson.com/products/1
 
 **Description:**  
 Verify API returns product details for a valid ID.
@@ -31,13 +31,13 @@ Verify API returns product details for a valid ID.
 - Status code is 200 OK
 - Response contains product details
 - Response format is JSON
-- Product object contains valid fields (id, title, price, category)
+- Product object contains required fields (id, title, price, category)
 - Product ID in responce matches requested ID
 
 ## TC-API-003 Verify response when product ID does not exist
 
 **Endpoint:**
-GET https://fakestoreapi.com/products/9999
+GET https://dummyjson.com/products/9999
 
 **Description:**
 Verify API response for non-existing product ID.
@@ -49,7 +49,7 @@ API is available
 1. Send GET request to /products/9999
 
 **Expected Result:**
-- Status code is 404 OR empty response
+- Status code is 404 Not Found
 - No product data is returned
 - Response format is JSON
 - No valid product data is returned
@@ -57,7 +57,7 @@ API is available
 ## TC-API-004 Verify product categories can be retrieved
 
 **Endpoint:**
-GET https://fakestoreapi.com/products/categories
+GET https://dummyjson.com/products/categories
 
 **Description:**
 Verify API returns product categories.
@@ -78,7 +78,7 @@ API is available
 ## TC-API-005 Verify products can be retrieved by category
 
 **Endpoint:**
-GET https://fakestoreapi.com/products/category/electronics
+GET  https://dummyjson.com/products/category/electronics
 
 **Description:**
 Verify API returns products filtered by category.
@@ -94,12 +94,12 @@ API is available
 - Response body contains products for selected category
 - Response format is JSON
 - Each product belongs to the selected category
-- Each product contain valid fields (id, title, price, category)
+- Each product contain required fields (id, title, price, category)
 
 ## TC-API-006 Verify login with valid credentials
 
 **Endpoint:**  
-POST https://fakestoreapi.com/auth/login
+POST  https://dummyjson.com/auth/login
 
 **Description:**  
 Verify login succeeds with valid credentials.
@@ -124,7 +124,7 @@ Verify login succeeds with valid credentials.
 ## TC-API-007 Verify login fails with invalid credentials
 
 **Endpoint:**
-POST https://fakestoreapi.com/auth/login
+POST  https://dummyjson.com/auth/login
 
 **Description:**
 Verify login fails with invalid credentials.
@@ -150,7 +150,7 @@ API is available
 ## TC-API-008 Verify login fails when username is missing
 
 **Endpoint:**
-POST https://fakestoreapi.com/auth/login
+POST https://dummyjson.com/auth/login
 
 **Description:**
 Verify login fails when username is missing.
@@ -176,7 +176,7 @@ API is available
 ## TC-API-009 Verify login fails when password is missing
 
 **Endpoint:**
-POST https://fakestoreapi.com/auth/login
+POST  https://dummyjson.com/auth/login
 
 **Description:**
 Verify login fails when password is missing.
@@ -202,7 +202,7 @@ API is available
 ## TC-API-010 Verify API returns status code 200 for successful requests
 
 **Endpoint:**
-GET https://fakestoreapi.com/products
+GET  https://dummyjson.com/products
 
 **Description:**
 Verify API returns status code 200 for successful requests.
@@ -219,4 +219,5 @@ API is available
 - Response format is JSON
 - Each product contains valid fields (id, title, price, category)
 
-
+## Author
+Anastasia Dragoman - QA Engineer
