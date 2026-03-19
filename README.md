@@ -1,4 +1,4 @@
-# Fake Store API Testing Project
+# DummyJSON API Testing Project
 
 This project demonstrates API testing using Postman.
 
